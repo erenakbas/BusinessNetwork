@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@mipmap/p2"
+    tools:context="com.example.eren.uyeol.com.example.eren.businessNetwork.MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        app:srcCompat="@mipmap/backgroundimage"
+        android:id="@+id/imageView2"
+        android:layout_marginBottom="175dp"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="170dp"
+                android:id="@+id/linearLayout">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:inputType="textPersonName"
+                    android:hint="Adınız"
+                    android:background="@drawable/edittext"
+                    android:ems="10"
+                    android:id="@+id/etAd"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="5dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:inputType="textPersonName"
+                    android:hint="Soyadınız"
+                    android:background="@drawable/edittext"
+                    android:ems="10"
+                    android:id="@+id/etSoyad"
+                    android:layout_below="@+id/etAd"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:inputType="textPersonName"
+                    android:hint="Kullanıcı Adı"
+                    android:background="@drawable/edittext"
+                    android:ems="10"
+                    android:id="@+id/etKullaniciAdi"
+                    android:layout_below="@+id/etAd"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:inputType="textPostalAddress"
+                    android:ems="10"
+                    android:hint="E-Posta Adresi"
+                    android:background="@drawable/edittext"
+                    android:layout_below="@+id/etSoyad"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/etEposta"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:inputType="textPassword"
+                    android:background="@drawable/edittext"
+                    android:ems="10"
+                    android:hint="Şifreniz"
+                    android:layout_below="@+id/etEposta"
+                    android:layout_alignRight="@+id/etEposta"
+                    android:layout_alignEnd="@+id/etEposta"
+                    android:id="@+id/etSifre"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="57dp">
+
+                <Button
+                    android:text="Üye Ol"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="uyeOlClick"
+                    android:background="@color/Amavi"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:text="Giriş Yap"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/Amavi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="grisGetirOnclick"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

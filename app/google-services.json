@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "733325285608",
+    "firebase_url": "https://uyeol-7b3b6.firebaseio.com",
+    "project_id": "uyeol-7b3b6",
+    "storage_bucket": "uyeol-7b3b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733325285608:android:ee7254b0377e31b2",
+        "android_client_info": {
+          "package_name": "com.example.eren.uyeol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733325285608-7q4eaq19b0cah5rk7be45joaa8a2a7ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4eGM-0CYC-5WQSDwXaJfHlOd99B6hZyQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733325285608-7q4eaq19b0cah5rk7be45joaa8a2a7ib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_giris"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@mipmap/p2"
+    tools:context="com.example.eren.uyeol.com.example.eren.businessNetwork.Giris">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:inputType="textPersonName"
+        android:hint="Kullanıcı Adı:"
+        android:ems="10"
+        android:id="@+id/etGrsKadi"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edittext"
+        android:layout_marginTop="130dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edittext"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Şifre"
+        android:id="@+id/etGrsSifre"
+        android:layout_below="@+id/etGrsKadi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp" />
+
+    <Button
+        android:text="Giriş Yap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="GrsYapOnclick"
+        android:background="@color/Amavi"
+        android:id="@+id/button3"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/etGrsSifre"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
